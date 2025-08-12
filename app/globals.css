@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #000;
+  color: rgba(252, 245, 223, 0.95);
+  font-family: teko;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(252, 245, 223, 0.95);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #fcb913;
+}
+
+@layer utilities {
+  .center {
+    @apply flex items-center justify-center;
+  }
+  .gold-text {
+    @apply text-gold uppercase font-primary;
+  }
+}
+
+@layer utilities {
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+
+  .bg-clip {
+    background-clip: text;
+    animation: move 10s linear infinite;
+    background-size: 50%;
+  }
+
+  .spin-slow {
+    animation: spin 50s linear infinite;
+  }
+  .spin-medium {
+    animation: spin 20s linear infinite;
+  }
+  .spin {
+    animation: spin 10s linear infinite;
+  }
+}
