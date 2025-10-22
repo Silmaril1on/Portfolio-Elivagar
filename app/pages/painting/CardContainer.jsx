@@ -13,7 +13,7 @@ const CardContainer = () => {
         rotate="6deg"
         top="20%"
         left="25%"
-        className="w-56"
+        className="w-44 md:w-56"
       />
       <Card
         containerRef={containerRef}
@@ -22,7 +22,7 @@ const CardContainer = () => {
         rotate="-8deg"
         top="25%"
         left="60%"
-        className="w-60"
+        className="w-44 lg:w-60"
       />
       <Card
         containerRef={containerRef}
@@ -31,7 +31,7 @@ const CardContainer = () => {
         rotate="-6deg"
         top="20%"
         left="40%"
-        className="w-80"
+        className="w-64 lg:w-80"
       />
       <Card
         containerRef={containerRef}
@@ -40,7 +40,7 @@ const CardContainer = () => {
         rotate="6deg"
         top="16%"
         left="47%"
-        className="w-64"
+        className="w-36 lg:w-64"
       />
     </div>
   );

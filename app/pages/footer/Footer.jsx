@@ -25,7 +25,7 @@ const Footer = () => {
       </motion.article>
       <motion.article
         variants={staggerOpacity}
-        className="mt-[5%] flex flex-row poin [&>span]:opacity-35 [&>span]:duration-300 [&>span]:mx-2 font-tetriary [&>span]:cursor-pointer"
+        className="mt-[5%] flex flex-row text-xs lg:text-lg [&>span]:opacity-35 [&>span]:duration-300 [&>span]:mx-2 font-tetriary [&>span]:cursor-pointer"
       >
         <h1 className="opacity-35 pointer-events-none">Built in</h1>
         <span className="hover:text-[#05def2] hover:opacity-100">REACT</span>

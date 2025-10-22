@@ -21,9 +21,21 @@ const CenterImage = ({ heightData }) => {
           opacity,
         }}
       >
+        {/* Desktop and tablet */}
         <Image
-          className="w-full h-full object-auto"
+          className="hidden md:block w-full h-full"
           src="/assets/rocks.png"
+          alt="surati"
+          width={1900}
+          height={1900}
+          quality={100}
+          priority
+        />
+
+        {/* Mobile */}
+        <Image
+          className="block md:hidden w-full h-auto"
+          src="/assets/rocks-vertical.png"
           alt="surati"
           width={1900}
           height={1900}

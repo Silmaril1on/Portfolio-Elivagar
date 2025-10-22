@@ -3,7 +3,7 @@ import HoverContainer from "@/app/components/HoverContainer";
 
 const ContentOne = () => {
   return (
-    <HoverContainer className="w-[270px] xl:w-[350px] xl:ml-[5%]">
+    <HoverContainer className="w-[270px] xl:w-[350px] ml-10 xl:ml-[5%]">
       <article className="relative p-2 flex flex-col items-start pointer-events-none">
         <h1 className="font-secondary text-sm xl:text-2xl">HEY, i am</h1>
         <HeaderAnimation text="LEVAN" className="font-primary text-5xl" />
@@ -17,9 +17,6 @@ const ContentOne = () => {
             WEB DEVELOPER
           </h1>
         </div>
-        <span className="text-xs font-secondary">
-          Co-founder and web creator of <a href="https://hyperlead.com" target="_blank" rel="noopener noreferrer" className="gold-text hover:underline cursor-pointer">Hyperlead</a>
-        </span>
       </article>
     </HoverContainer>
   );

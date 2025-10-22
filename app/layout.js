@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Elivagar | React Developer",
+  title: "Elivagar's Portfolio",
   description: "REACT web developer",
 };
 
